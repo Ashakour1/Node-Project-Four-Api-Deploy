@@ -15,8 +15,8 @@ This documentation outlines the endpoints and functionality of a user authentica
 
 ## Table of Contents
 
-1. ``[**Sign Up**]``(#sign-up)
-2. ``[**Log In**]``(#log-in)
+1. ``[Sign Up]``(#sign-up)
+2. ``[Log In]``(#log-in)
 
 ---
 
@@ -33,7 +33,7 @@ The api/author/signup endpoint allows a user to sign up as an author by providin
 | Parameter   | Type    | Description                    |
 | --------    | ------- | --------                       |
 | ``name``    | String  | The name of the author.        |
-| ``email`    | String  | The email address of the author|
+| ``email``   | String  | The email address of the author|
 | ``password``| String  | The password for the author    |
 
 
@@ -46,8 +46,8 @@ The api/author/signup endpoint allows a user to sign up as an author by providin
   ```json
   {
     "message": "Author created successfully",
-    "owner": {
-      // Owner object containing details
+    "author": {
+      // author object containing details
     }
   }
   ```
@@ -83,10 +83,10 @@ This endpoint allows a user to log in as an author by providing their email and 
 
 ### Request Body
 
-| Parameter | Type    | Description                    |
-| --------  | ------- | --------                       |
-| `email`   | String  | The email address of the author|
-| `password`| String  | The password for the author    |
+| Parameter   | Type    | Description                    |
+| --------    | ------- | --------                       |
+| ``email``   | String  | The email address of the author|
+| ``password``| String  | The password for the author    |
 
 
 ### Success Response
